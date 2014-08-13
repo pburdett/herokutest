@@ -1,20 +1,4 @@
-Skip to content
- 
-This repository 
-Explore
-Gist
-Blog
-Help
-pburdett pburdett
- 
- 
-263  Watch 
-  Star 2,217
- Fork 900 dropwizard/dropwizard
- branch: master  dropwizard / dropwizard-example / example.yml
-Jamie Furness reines on Jun 13 Updating h2 to 1.4.178
-8 contributors  Coda Hale  Kyle Van Vranken  Mark Wolfe  Sean Scanlon  Jamie Furness  Fredrik Sundberg  Daniel Temme  Xavier Shay
-69 lines (54 sloc)  1.349 kb RawBlameHistory   
+
 template: Hello, %s!
 
 defaultName: Stranger
@@ -83,4 +67,3 @@ logging:
 
   appenders:
     - type: console
-Status API Training Shop Blog About © 2014 GitHub, Inc. Terms Privacy Security Contact 
