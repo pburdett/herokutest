@@ -1,1 +1,1 @@
-web  java -Ddw.http.port=$PORT -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
+web  java -Ddw.http.port=8080 -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
