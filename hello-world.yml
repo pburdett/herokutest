@@ -1,3 +1,8 @@
-template: Hello, %s. This is the computer!
+template: Hello, %s!
 
-defaultName: Strangerdsfdsfds
+defaultName: Stranger
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
