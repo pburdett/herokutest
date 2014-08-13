@@ -2,5 +2,5 @@ template: Hello, %s!
 
 defaultName: Stranger
 
-type: http
+http:
   port: 8080
