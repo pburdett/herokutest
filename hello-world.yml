@@ -1,5 +1,86 @@
-http:
-  port: 8080
-
+Skip to content
+ 
+This repository 
+Explore
+Gist
+Blog
+Help
+pburdett pburdett
+ 
+ 
+263  Watch 
+  Star 2,217
+ Fork 900 dropwizard/dropwizard
+ branch: master  dropwizard / dropwizard-example / example.yml
+Jamie Furness reines on Jun 13 Updating h2 to 1.4.178
+8 contributors  Coda Hale  Kyle Van Vranken  Mark Wolfe  Sean Scanlon  Jamie Furness  Fredrik Sundberg  Daniel Temme  Xavier Shay
+69 lines (54 sloc)  1.349 kb RawBlameHistory   
 template: Hello, %s!
+
 defaultName: Stranger
+
+# Database settings.
+database:
+
+  # the name of your JDBC driver
+  driverClass: org.h2.Driver
+
+  # the username
+  user: sa
+
+  # the password
+  password: sa
+
+  # the JDBC URL
+  url: jdbc:h2:./target/example
+
+# use the simple server factory if you only want to run on a single port
+#server:
+#  type: simple
+#  connector:
+#    type: http
+#    port: 8080
+
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  applicationConnectors:
+    - type: http
+      port: 8080
+    - type: https
+      port: 8443
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+# this requires the npn-boot library on the JVM's boot classpath
+#    - type: spdy3
+#      port: 8445
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+  adminConnectors:
+    - type: http
+      port: 8081
+    - type: https
+      port: 8444
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    # Sets the level for 'com.example.app' to DEBUG.
+    com.example.app: DEBUG
+
+    org.hibernate.SQL: ALL
+
+  appenders:
+    - type: console
+Status API Training Shop Blog About © 2014 GitHub, Inc. Terms Privacy Security Contact 
