@@ -1,1 +1,1 @@
-web  java $JAVA_OPTS -Dport=$PORT -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
+web  java $JAVA_OPTS -Dport=$dport -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
