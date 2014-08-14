@@ -1,1 +1,1 @@
-web  java $JAVA_OPTS -Ddw.server.applicationConnectors[0].port=$PORT -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
+web  java $JAVA_OPTS -Ddw.server.applicationConnectors.port=$PORT -jar target/exampleMavenProject-0.0.1-SNAPSHOT.jar server hello-world.yml
